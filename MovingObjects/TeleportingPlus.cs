@@ -1,6 +1,6 @@
 ﻿namespace MovingObjects
 {
-    internal class TeleportingPlus
+    internal class TeleportingPlus : IMovingObject
     {
         private int _col;
         private int _row;
