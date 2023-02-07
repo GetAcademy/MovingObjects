@@ -24,8 +24,10 @@
 
         public void Move()
         {
-            _col = (_col + _speedCol) % Console.WindowWidth;
-            _row = (_row + _speedRow) % Console.WindowHeight;
+            var w= Console.WindowWidth;
+            var h = Console.WindowHeight;
+            _col = (_col + _speedCol + w) % w;
+            _row = (_row + _speedRow + h) % h;
         }
     }
 }
